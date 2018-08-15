@@ -1,0 +1,56 @@
+html {
+    height:100%;
+    animation-name: introFadeIn;
+    animation-timing-function: ease-in;
+    animation-duration: 1600ms;
+} 
+
+@keyframes introFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+	margin:auto;
+	color:#6A6AB5;
+	display:flex;
+	flex-direction:column;
+	height:100%;
+}
+
+#main {
+	background-color:#FFFFFF;
+    height:100%;
+    max-width:1020px;
+}
+
+header {
+	background-color:#6AB0B5;
+	text-align:center;
+	padding:1px;
+}
+
+header h1 {
+	font-family:helvetica;
+	color:#FFFFFF;
+	font-size:2em;
+}
+
+/* iPhone 8 Plus and narrower */
+@media (max-width: 414px) {
+    body {
+        max-width:1020px;
+    }
+    header {
+        padding:30px 0;
+    }
+    header h1 {
+        font-size:4em;
+        margin:0;
+    }
+}
