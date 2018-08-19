@@ -4,9 +4,24 @@
 		<meta charset="utf-8"/>
 		<title>Windex</title>
 		<link rel="stylesheet" href="css/base.css">
+		
+		<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+		<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBir2ycbSKHlORh5B5MhgwkuGtVCihtFEQ",
+			authDomain: "windex-5e766.firebaseapp.com",
+			databaseURL: "https://windex-5e766.firebaseio.com",
+			projectId: "windex-5e766",
+			storageBucket: "windex-5e766.appspot.com",
+			messagingSenderId: "202275501835"
+		};
+		firebase.initializeApp(config);
+		</script>
+		
 		<script src="js/script.js"></script>
 	</head>
-	<body onload="loadLists()">
+	<body onload="loadFirebaseData()">
 		<header>
 			<h1>Windex</h1>
 		</header>
